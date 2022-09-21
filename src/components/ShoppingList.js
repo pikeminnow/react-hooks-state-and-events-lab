@@ -13,13 +13,13 @@ function displayItems(filterDisplay , itemList ){
 console.log('displayItems');
  if (filterDisplay === "All"){
     console.log('displayItems true');
-      itemList.map((item) => (
+      return itemList.map((item) => (
         <Item key={item.id} name={item.name} category={item.category} />
       ))}
   else {
     console.log('displayItems false');
     let filteredList = itemList.filter(item => item.category === isList);
-    filteredList.map((item) => (
+    return filteredList.map((item) => (
       <Item key={item.id} name={item.name} category={item.category} />
       ))}
 }
