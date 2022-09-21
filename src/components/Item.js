@@ -11,7 +11,7 @@ function handleCartClick(isCart) {
       <span>{name}</span>
       <span className="category">{category}</span>
       <button className={`add ${isCart ? "in-cart" : ""}`} onClick={handleCartClick} 
-      >Add to Cart</button>
+      >{`${isCart? "In Cart" :"Add to Cart"}`}</button>
     </li>
   );
 }
